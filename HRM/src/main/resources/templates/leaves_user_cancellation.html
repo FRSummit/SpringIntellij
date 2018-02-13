@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/common_layout">
+    <head>
+        <title>HRM Leave Cancellation Letter</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" media="all" href="../static/css/background.css" th:href="@{/css/background.css}" />
+    </head>
+    <body>
+        <div class="container">
+            <div layout:fragment="content">
+                <form>
+                    <div class="container">
+                        <h1 class="well">Leave Cancellation Letter</h1>
+                        <div class="col-lg-12 well">
+                            <h3 style="margin-left:1%">Employee Details</h3>
+                            <div class="row">
+                                <div class="col-sm-9 form-horizontal">
+                                    <!--<div class="form-group">-->
+                                    <!--<div class="col-sm-5">-->
+                                    <!--<h4 style="display:inline-block;">Id : </h4>-->
+                                    <!--<h4 style="display:inline-block;">2014200000071</h4>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="form-group">-->
+                                    <!--<div class="col-sm-5">-->
+                                    <!--<h4 style="display:inline-block;">Name : </h4>-->
+                                    <!--<h4 style="display:inline-block;">Summit</h4>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <div class="form-group" style="margin-left:-30%">
+                                        <label class="col-md-4 control-label" style="margin-top:2.5%">Id: </label>
+                                        <div class="col-md-6">
+                                            <h3 name="otp">2014200000071</h3>
+                                        </div>
+                                        <label class="col-md-4 control-label" style="margin-top:2.5%">Full Name: </label>
+                                        <div class="col-md-6">
+                                            <h3 name="otp">Fayazur Rahman Summit</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 well">
+                            <div class="row">
+                                <h3 style="margin-left:1%">Leave Cancel Request</h3>
+                                <form>
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="col-sm-6 form-group">
+                                                <label>Leave Id</label>
+                                                <input type="text" placeholder="Leave Id" class="form-control"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-lg btn-info" style="margin:0% 0% 2% 10%">Apply</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
